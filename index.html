@@ -12,11 +12,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital@0;1&family=Montserrat:ital,wght@0,300;1,300&family=Titillium+Web:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Zen+Kaku+Gothic+New:wght@300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1445357fbb.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!------------------------- header ----------------------------------->
     <header>
-        <div class="headerDiv">
+        <div class="headerDiv" >
             <div class="logoContainer">
                 <a class="logoCora" href="./index.html"><img src="./Assets/logoCoraFPBlanco.svg" alt="logoCora"></a>
                 <div id="fpHeaderDiv">
@@ -26,7 +27,7 @@
             <!-- <div>
                 <img class="logoCora" src="./Assets/1x/Recurso 1.png" alt="logoCora">
             </div>         -->
-            <div class="menuIcon"><a href="./Assets/menuIcon.svg"></a></div>
+            <!-- <div class="menuIcon"><a href="./Assets/menuIcon.svg"></a></div> -->
             <nav class="headerItems">
                 <ul>
                 <!-- <li ><a href="index.html">Inicio</a></li>                 -->
@@ -40,9 +41,9 @@
     </header>
     <!------------------------------------- Main ------------------------------------>
     <main id="mainIndex">
-        <div class="mainItemsDiv">
-            <h1 class="mainItemsh1">Hola! Soy un desarrollador web ubicado en Argentina</h1>
-            <div id="quienSoy"><a href="./paginas/cv.html">Quien Soy</a></div>
+        <div class="mainItemsDiv" >
+             <h1 class="mainItemsh1" data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in">Hola! Soy un desarrollador web ubicado en Argentina</h1>
+            <div id="quienSoy" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in"><a href="./paginas/cv.html">Quien Soy</a></div>
         </div>
     </main>
     <footer>
@@ -52,5 +53,9 @@
             <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
