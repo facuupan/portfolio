@@ -68,11 +68,13 @@ body:before{
     z-index: -1;
 }
 
-li{
+ footer li{
     list-style: none;
-    padding: 1rem;
+    padding-left:1.5rem;    
     display: inline;
-    margin: 0px 5px;
+}
+footer ul{
+    margin:0 2rem;
 }
 .headerItems{
     display:flex;
@@ -108,7 +110,9 @@ header li{
     padding: 2px;
     text-decoration: none;
     border-radius: 3px;
-    font-weight: bold;    
+    font-weight: bold;
+    list-style: none;
+    display:inline;    
 }
 #navContacto{
     background-color: rgb(59, 122, 238);
@@ -165,7 +169,7 @@ main{
 }
 footer{
     position: fixed;
-    bottom: 0px;
+    bottom: 0.5em;
     width: 100vw;
     display:flex;
     justify-content:flex-end;
@@ -288,10 +292,28 @@ form{
         margin: auto;
     }
     footer a{
-        font-size: 0.8rem;
+        font-size: 1.2rem;
         justify-items: center;
     }
-    
+    footer li{
+        list-style: none;
+        padding: 0 0.5em;    
+        display: inline;
+    }
+    footer ul{
+        margin:0 0 0.3em 0;
+        padding: 0;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        display:flex;
+        justify-content:center;
+        /* background-color: #add8e6; */
+        grid-area: footer;
+        position: absolute;
+    }    
 }
 @media only screen and (max-width: 768px) {
     header{
@@ -340,53 +362,6 @@ form{
     }
     .mainItemsDiv{
         margin:0,20vw;
-    }
-}
-@media only screen and (max-width: 768px) {
-    header{
-        width: 100%;
-        margin: auto;
-        max-height: 70px;
-        grid-area: header;   
-    }
-    
-    .headerItems li a{
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        border: none;
-        margin: 0.5rem;
-        align-items: center;
-        font-size: 0.8rem;
-        justify-content: center;
-        text-align: center;
-    }
-    .headerItems ul{
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .headerItems{
-        padding: 0;
-        align-self: center;
-    }
-    .headerDiv{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: auto;
-        padding-top: 1rem;
-        padding: 0;
-    }
-    .logoContainer h1 {
-        display: none;
-    }
-    .mainItemsh1{
-        font-size: 2.8rem;
-        margin: auto;
-    }
-    footer a{
-        font-size: 0.8rem;
-        justify-items: center;
     }
 }
 @media only screen and (max-width: 426px) {
