@@ -312,7 +312,7 @@ form{
         justify-content:center;
         /* background-color: #add8e6; */
         grid-area: footer;
-        position: absolute;
+        position: fixed;
     }    
 }
 @media only screen and (max-width: 768px) {
