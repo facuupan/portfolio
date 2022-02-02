@@ -15,27 +15,30 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <header>
-        <div class="headerDiv">
-            <div class="logoContainer">
-                <a class="logoCora" href="../index.html"><img src="../Assets/logoCoraFPBlanco.svg" alt="logoCora"></a>
-                <div id="fpHeaderDiv">
-                    <h1><a href="../index.html">Facundo Pancani</a></h1>
-                </div>
-            </div>
-            <!-- <div>
-                <img class="logoCora" src="./Assets/1x/Recurso 1.png" alt="logoCora">
-            </div>         -->
-            <nav class="headerItems">
-                <ul>
-                <!-- <li ><a href="index.html">Inicio</a></li>                 -->
-                <li ><a href="../paginas/cv.html">Capacidades</a></li>
-                <li ><a href="../paginas/trabajos.html">Mis trabajos</a></li>
-                <li ><a href="../paginas/galeria.html">Galería</a></li>
-                <li ><a href="../paginas/contacto.html" id="navContacto">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>         
+    <header class="navbar navbar-expand-lg navbar-light fill-content">
+        <div class="container d-flex">
+          <a class="navbar-brand d-flex fs-2 align-items-center text-light flex-fill" href="../index.html"><img class="logo align-self-center" src="../Assets/logoCoraFPBlanco.svg">Facundo Pancani</a> 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav class="collapse navbar-collapse flex-grow-1" id="navbarNav">
+            <ul class="navbar-nav w-100 d-flex justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-light active" aria-current="page" href="./cv.html">Capacidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./trabajos.html">Mis Trabajos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>    
     </header>
     <main>
         <div>

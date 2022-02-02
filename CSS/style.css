@@ -22,8 +22,8 @@ a{
     transition: all 0.3s ease 0s;
 }
 
-header a:hover{
-    color:greenyellow;
+a:hover{
+    color:greenyellow !important;
 }
 footer i{
     margin-right: 4px;
@@ -40,14 +40,14 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display:grid;
+    /* display:grid;
     grid-template-areas: 
     "header header header"
     "main main main"
     "main main main"
     "main main main"
     "main main main"
-    "footer footer footer";
+    "footer footer footer"; */
     /* grid-template-rows: 70px 725px 50px; */
     
 }
@@ -76,14 +76,15 @@ body:before{
 footer ul{
     margin:0 2rem;
 }
-.headerItems{
+.headerNav ul{
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
     border: none;
-    margin: auto 15px;
+    margin: auto;
     align-items: center;
-    max-width: 100vw; 
+    max-width: 100vw;
+    margin-bottom: 0; 
 }
 #fpheaderDiv{
     white-space: nowrap;
@@ -92,27 +93,26 @@ footer ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10%;
 }
 h1{
     font-weight: 700;
 }
-header{
-    width: 100%;
-    margin: 30px, 10%;
+/* header{
+    max-width: 100vw;
+    padding: 30px 10%;
     max-height: 70px;
     grid-area: header;    
-}
+} */
 header li{
     /* border: grey solid 2px; */
     color: black;
     width: fit-content;
-    padding: 2px;
     text-decoration: none;
     border-radius: 3px;
     font-weight: bold;
     list-style: none;
-    display:inline;    
+    display:inline;
+    padding-left: 1rem;  
 }
 #navContacto{
     background-color: rgb(59, 122, 238);
@@ -123,11 +123,6 @@ header li{
 #navContacto:hover{
     background-color: rgb(46, 93, 180);
 }
-
-.header a{
-    color: rgb(255, 0, 0);
-}
-
 .mainItemsh1{
     text-align: center;
     font-weight: bold;
@@ -136,7 +131,9 @@ header li{
     margin-right: auto;
     position: relative;
     /* margin-top: 100px; */
-    
+}
+#mainIndex{
+    padding-top: 10rem;
 }
 #quienSoy{
     text-align: center;
@@ -230,10 +227,10 @@ form{
 .formEnviar:hover{
     background-color: rgb(64, 108, 189);
 }
-.logoCora img{
-    min-height: 3rem;
-    min-width: 3rem;
-    margin: auto;
+.logo{
+    max-height: 5rem;
+    max-width: 5rem;
+    margin-right: 1rem;
 }
 .logoCora{
     margin-right:0.8rem;
@@ -256,9 +253,20 @@ form{
         width: 100%;
         margin: auto;
         max-height: 70px;
-        grid-area: header;   
+        grid-area: header;
+        padding: 0;   
     }
-    
+    header ul{
+        /* border: grey solid 2px; */
+        color: black;
+        width: fit-content;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: bold;
+        list-style: none;
+        display:inline;
+        margin-top: 1rem;  
+    }    
     .headerItems li a{
         display:flex;
         flex-wrap: nowrap;
@@ -272,7 +280,7 @@ form{
         margin-right: 2rem;
         margin-left: 2rem;
     }
-    .headerItems ul{
+    .headerNav ul{
         margin-top: 1rem;
         display: flex;
         flex-wrap: nowrap;
@@ -336,8 +344,21 @@ form{
         width: 100%;
         margin: auto;
         max-height: 70px;
-        grid-area: header;   
+        grid-area: header;
+        padding: 0;   
     }
+    header ul{
+        /* border: grey solid 2px; */
+        color: black;
+        width: fit-content;
+        text-decoration: none;
+        border-radius: 3px;
+        font-weight: bold;
+        list-style: none;
+        display:inline;
+        margin-top: 1rem;
+        padding: 0;  
+    }    
     
     .headerItems li a{
         display:flex;
