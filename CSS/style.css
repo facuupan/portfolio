@@ -154,6 +154,7 @@ main{
     align-items: center;
     /* padding: 100px; */
     grid-area: main;
+    padding-top: 5rem;
 }
 .mainDivGaleria{
     max-width: 70vw;
@@ -168,23 +169,33 @@ main{
     right: 10px;
 }
 footer{
-    position: fixed;
-    bottom: 0.5em;
+    position:absolute;
+    bottom: 0;
     width: 100vw;
     display:flex;
     justify-content:flex-end;
     /* background-color: #add8e6; */
     grid-area: footer;
-    position: absolute;
+    align-self:flex-end;
 }
-form{
+/* form{
     margin: auto;
     background-color: white;
     border-radius: 1em;
     padding: 3.5em 1.5em;
     width: 90%;
-    width: 500px;
     max-width: 70vw;
+} */
+#sectionContacto{
+    background-color:white;
+    border-radius: 1rem;
+}
+#botonContacto:hover{
+    background-color: #20c997;
+}
+#botonContacto{
+    background-color:#0d6efd;
+    color: white;
 }
 .formContainer{
     width: 100%;
@@ -326,7 +337,7 @@ form{
         justify-content:center;
         /* background-color: #add8e6; */
         grid-area: footer;
-        position: fixed;
+        /* position: fixed; */
     }
     form{
         background-color: white;
@@ -400,6 +411,11 @@ form{
     .mainItemsDiv{
         margin:0,20vw;
     }
+    #sectionContacto{
+        background-color:white;
+        border-radius: 1rem;
+        width: 75% !important;
+    }
 }
 @media only screen and (max-width: 426px) {
     header{
@@ -446,5 +462,11 @@ form{
     footer a{
         font-size: 0.8rem;
         justify-items: center;
+    }
+    .mainDivGaleria{
+        max-width: 100vw;
+    }
+    .mainDivGaleria img{
+        max-width: 100vw;
     }
 }
