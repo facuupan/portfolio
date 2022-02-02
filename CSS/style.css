@@ -161,6 +161,9 @@ main{
 .mainDivGaleria{
     max-width: 70vw;
 }
+.mainDivGaleria img{
+    max-width: 30vw;
+}
 .botonWhatsApp img{
     width: 70px;
     position: fixed;
@@ -183,8 +186,8 @@ form{
     border-radius: 1em;
     padding: 3.5em 1.5em;
     width: 90%;
-    width: 400px;
-    max-width: 60vw;
+    width: 500px;
+    max-width: 70vw;
 }
 .formContainer{
     width: 100%;
@@ -243,6 +246,9 @@ form{
     justify-content: center;
     white-space: nowrap;
     align-items: center;
+}
+.navbar{
+    min-width: 100vw;
 }
 
 @media only screen and (max-width:1025px){
@@ -313,6 +319,16 @@ form{
         /* background-color: #add8e6; */
         grid-area: footer;
         position: fixed;
+    }
+    form{
+        background-color: white;
+        border-radius: 1em;
+        padding: 1.5em;
+        width: 90%;
+        max-width: 90vw;
+    }
+    .mainDivGaleria img{
+        max-width: 50vw;
     }    
 }
 @media only screen and (max-width: 768px) {
