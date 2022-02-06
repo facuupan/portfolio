@@ -255,11 +255,9 @@ footer{
     white-space: nowrap;
     align-items: center;
 }
-#FacundoPancaniH2 {
-    Hover
-}
+
 .navbar{
-    min-width: 100vw;
+    min-width:100vw;
 }
 .dropdown{
     z-index: 1020;
