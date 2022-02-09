@@ -1,14 +1,12 @@
 {
-  "name": "portfolio-dw-pruebas",
+  "name": "portfolio-dw",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
-    "build-css": "node-sass --include-path scss scss/style.scss css/main.css",
-
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-sass": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
@@ -20,7 +18,7 @@
     "url": "https://github.com/facuupan/portfolioFacundoPancani/issues"
   },
   "homepage": "https://github.com/facuupan/portfolioFacundoPancani#readme",
-  "dependencies": {
+  "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
   }
