@@ -134,6 +134,10 @@ h1 {
   color: greenyellow;
 }
 
+#quienSoy a {
+  text-shadow: 3rem;
+}
+
 .mainItemsDiv h1 {
   font-size: larger;
 }
@@ -555,5 +559,9 @@ footer ul {
     min-width: 3em;
     margin-bottom: 1em;
   }
+}
+
+#H1Trabajos {
+  margin-bottom: 2rem;
 }
 /*# sourceMappingURL=style.css.map */
