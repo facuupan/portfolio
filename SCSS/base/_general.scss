@@ -1,53 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Titillium Web', sans-serif ;
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  color: white;
 }
 a {
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
-    color: white;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: white;
 }
-a:hover{
-    color:greenyellow !important;
+a:hover {
+  color: greenyellow !important;
 }
-body{
-    position: relative;
-    max-width: 100vw;
-    min-height: 100vh;
-    padding-bottom: 5rem;
-    font-size: 1.2rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    overflow-y:scroll;
+body {
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  font-size: 1.2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-y: scroll;
 }
-body:before{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0px;
-    left: 0;
-    background-image: linear-gradient( 109.6deg,  rgba(48,207,208,1) 11.2%, rgba(51,8,103,1) 92.5% );
-    z-index: -1;
+body:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  background-image: map-get($colores, gradienteFondo);
 }
-main{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
 }
-h1{
-    font-weight: 700;
+h1 {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 426px) {
-    main {
-        padding-top: 2rem;
-    }
+  main {
+    padding-top: 2rem;
+  }
 }

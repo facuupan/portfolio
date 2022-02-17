@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   color: white;
 }
 
@@ -37,7 +37,6 @@ body:before {
   top: 0px;
   left: 0;
   background-image: linear-gradient(109.6deg, #30cfd0 11.2%, #330867 92.5%);
-  z-index: -1;
 }
 
 main {
@@ -83,7 +82,7 @@ h1 {
 }
 
 #sectionContacto form #botonContacto:hover {
-  background-color: #20c997;
+  background-color: #012e70;
 }
 
 #sectionContacto form #botonContacto {
@@ -102,11 +101,15 @@ h1 {
   #sectionContacto {
     background-color: white;
     border-radius: 1rem;
-    width: 75% !important;
+    width: 80% !important;
   }
 }
 
-#indexMainH1 {
+#mainIndex {
+  padding-top: 10rem;
+}
+
+#mainIndex .mainItemsDiv #indexMainH1 {
   text-align: center;
   font-weight: bold;
   font-size: 3.5rem;
@@ -115,11 +118,7 @@ h1 {
   position: relative;
 }
 
-#mainIndex {
-  padding-top: 10rem;
-}
-
-#quienSoy {
+#mainIndex .mainItemsDiv #quienSoy {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
@@ -130,19 +129,15 @@ h1 {
   text-decoration: none;
 }
 
-#quienSoy a:hover {
+#mainIndex .mainItemsDiv #quienSoy a:hover {
   color: greenyellow;
 }
 
-#quienSoy a {
+#mainIndex .mainItemsDiv #quienSoy a {
   text-shadow: 3rem;
 }
 
-.mainItemsDiv h1 {
-  font-size: larger;
-}
-
-@media only screen and (max-width: 426px) {
+@media only screen and (min-width: 425px) {
   #mainIndex {
     padding-top: 7.5rem;
   }
@@ -169,20 +164,7 @@ h1 {
   }
 }
 
-#FacundoPancaniH2 {
-  white-space: nowrap;
-}
-
-header li {
-  text-decoration: none;
-  border-radius: 3px;
-  font-weight: bold;
-  list-style: none;
-  display: inline;
-  padding-left: 1rem;
-}
-
-#logoContainerNav {
+header #logoContainerNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -200,24 +182,37 @@ header li {
   width: fit-content;
 }
 
-#logoContainerNav .logo {
+header #logoContainerNav .logo {
   max-height: 5rem;
   max-width: 5rem;
   margin-right: 1rem;
 }
 
-nav {
+header #logoContainerNav #FacundoPancaniH2 {
+  white-space: nowrap;
+}
+
+header li {
+  text-decoration: none;
+  border-radius: 3px;
+  font-weight: bold;
+  list-style: none;
+  display: inline;
+  padding-left: 1rem;
+}
+
+header nav {
   z-index: 1020;
 }
 
-nav #navContacto {
+header nav #navContacto {
   background-color: #3b7aee;
   border-radius: 50px;
   padding: 9px 25px;
   cursor: pointer;
 }
 
-nav #navContacto:hover {
+header nav #navContacto:hover {
   background-color: #2e5db4;
 }
 
@@ -230,7 +225,6 @@ nav #navContacto:hover {
     padding: 0;
   }
   header ul {
-    /* border: grey solid 2px; */
     color: black;
     text-decoration: none;
     border-radius: 3px;
@@ -240,99 +234,27 @@ nav #navContacto:hover {
     margin-top: 1rem;
     padding: 0;
   }
-  .headerItems li a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    border: none;
-    margin: 0.5rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-size: 0.8rem;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    text-align: center;
-  }
-  .headerItems ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .headerItems {
-    padding: 0;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-  .headerDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    padding-top: 1rem;
-    padding: 0;
-  }
-  .logoContainer h1 {
-    display: none;
-  }
-  #ulNavbar {
-    background-image: linear-gradient(200deg, rgba(48, 207, 208, 0.85) 11.2%, rgba(51, 8, 103, 0.9) 90%);
-    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  }
-  nav #navContacto {
+  header nav #navContacto {
     background-color: transparent;
     border-radius: 0;
     padding: 8px 0px;
     cursor: pointer;
   }
-  nav #navContacto:hover {
+  header nav #navContacto:hover {
     background-color: transparent;
+  }
+  header nav #ulNavbar {
+    background-image: linear-gradient(200deg, rgba(48, 207, 208, 0.85) 11.2%, rgba(51, 8, 103, 0.9) 90%);
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (min-width: 425px) {
   header {
     width: 100%;
     margin: auto;
     max-height: 70px;
-    grid-area: header;
-  }
-  .headerItems ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
-  .headerDiv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: auto;
-    padding-top: 1rem;
-    padding: 0;
   }
   #logoContainerNav {
     display: -webkit-box;
@@ -365,18 +287,22 @@ nav #navContacto:hover {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: row;
+      -ms-flex-pack: row;
+          justify-content: row;
+  -ms-flex-line-pack: baseline;
+      align-content: baseline;
   bottom: 0;
   position: absolute;
   max-width: 100%;
   width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-item-align: baseline;
-      align-self: baseline;
 }
 
 footer li {
@@ -400,17 +326,21 @@ footer ul {
 
 @media only screen and (max-width: 992px) {
   footer {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: row;
+        -ms-flex-pack: row;
+            justify-content: row;
+    -ms-flex-line-pack: baseline;
+        align-content: baseline;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
   }
   footer li {
     list-style: none;
@@ -426,7 +356,7 @@ footer ul {
   }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (min-width: 425px) {
   footer {
     bottom: 0;
     position: absolute;
@@ -518,7 +448,7 @@ footer ul {
   margin-bottom: 1em;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (min-width: 425px) {
   #mainConocimientos #LogosContainer {
     padding: 0;
   }

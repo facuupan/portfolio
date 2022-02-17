@@ -1,1 +1,31 @@
-$colorHover: lightgreen;
+$colores: (
+  primario: white,
+  gradienteFondo:
+    linear-gradient(
+      109.6deg,
+      rgba(48, 207, 208, 1) 11.2%,
+      rgba(51, 8, 103, 1) 92.5%
+    ),
+  hover: greenyellow,
+  contacto: #0d6efd,
+  contactoHover: darken(#0d6efd, 30),
+);
+
+@mixin flex($dis, $direction, $corte, $just, $align) {
+  display: $dis;
+  flex-flow: $direction $corte;
+  justify-content: $direction;
+  align-content: $align;
+}
+
+@mixin mediaQuery($diseñoPantalla) {
+  @if $diseñoPantalla == mobile {
+    @media only screen and (min-width: 425px) {
+      @content;
+    }
+  } @else if $diseñoPantalla == tablet {
+    @media only screen and (max-width: 992px) {
+      @content;
+    }
+  }
+}

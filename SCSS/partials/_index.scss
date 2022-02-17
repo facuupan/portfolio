@@ -1,59 +1,57 @@
-#indexMainH1{
-    text-align: center;
-    font-weight: bold;
-    font-size: 3.5rem;
-    margin-left: auto;  
-    margin-right: auto;
-    position: relative;
-}
-#mainIndex{
-    padding-top: 10rem;
-}
-#quienSoy{
-    text-align: center;
-    font-weight: bold;
-    font-size: 2rem;
-    margin-left: auto;  
-    margin-right: auto;
-    position: relative;
-    margin-top: 100px;
-    text-decoration: none;
-}
-#quienSoy a:hover{
-    color: greenyellow;
-}
-#quienSoy a {
-    text-shadow: 3rem;
-}
-.mainItemsDiv{
-    h1{
-        font-size: larger;
+#mainIndex {
+  padding-top: 10rem;
+  .mainItemsDiv {
+    #indexMainH1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 3.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
     }
-}
-@media only screen and (max-width: 426px) {
-    #mainIndex{
-        padding-top: 7.5rem;
-        #indexMainH1{
-            text-align: center;
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin-left: auto;  
-            margin-right: auto;
-            position: relative;
-        }
-        
-        #quienSoy{
-            text-align: center;
-            font-weight: bold;
-            font-size: 2rem;
-            margin-left: auto;  
-            margin-right: auto;
-            position: relative;
-            margin-top: 100px;
-            text-decoration: none;
-            a:hover{
-                color: greenyellow;
-            }
-        } 
+    #quienSoy {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-top: 100px;
+      text-decoration: none;
+      a:hover {
+        color: map-get($colores, hover);
+      }
+      a {
+        text-shadow: 3rem;
+      }
     }
+  }
+}
+
+@include mediaQuery(mobile) {
+  #mainIndex {
+    padding-top: 7.5rem;
+    #indexMainH1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    #quienSoy {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-top: 100px;
+      text-decoration: none;
+      a:hover {
+        color: greenyellow;
+      }
+    }
+  }
 }
