@@ -1,6 +1,35 @@
+@include mediaQuery(mobile) {
+  #mainIndex {
+    padding-top: 7.5rem;
+    #indexMainH1 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+
+    #quienSoy {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      margin-top: 100px;
+      text-decoration: none;
+      a:hover {
+        color: greenyellow;
+      }
+    }
+  }
+}
+
 #mainIndex {
   padding-top: 10rem;
   .mainItemsDiv {
+    padding-bottom: 10rem;
     #indexMainH1 {
       text-align: center;
       font-weight: bold;
@@ -28,30 +57,3 @@
   }
 }
 
-@include mediaQuery(mobile) {
-  #mainIndex {
-    padding-top: 7.5rem;
-    #indexMainH1 {
-      text-align: center;
-      font-weight: bold;
-      font-size: 2.5rem;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-    }
-
-    #quienSoy {
-      text-align: center;
-      font-weight: bold;
-      font-size: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      margin-top: 100px;
-      text-decoration: none;
-      a:hover {
-        color: greenyellow;
-      }
-    }
-  }
-}

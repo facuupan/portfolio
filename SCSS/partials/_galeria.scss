@@ -1,6 +1,52 @@
-.mainDivGaleria{
-    max-width: 70vw;
+.mainGaleria {
+    .row {
+        .card{
+            align-items: center;
+            background-color: aliceblue;
+            margin:1.5rem;
+            hr{
+                max-width: fit-content;
+            }
+            img {
+                margin:1.25rem ;
+                width: 5rem;
+                max-height: 5rem;
+            }
+            .card-body{
+                text-align: center;
+                h5{
+                    color: black;
+                    font-weight: bold;
+                }
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
 }
-.mainDivGaleria img{
-    max-width: 30vw;
+
+
+@include mediaQuery(mobile) {
+    .mainGaleria {
+        .row {
+            .card{
+                display: flex;
+                background-color: aliceblue;
+                margin:1.5rem 2rem ;
+                img {
+                    margin:1.25rem ;
+                    width: 5rem;
+                    max-height: 5rem;
+                }
+                h5{
+                    color: black;
+                    font-weight: bold;
+                }
+                p{
+                    color: black;
+                }
+            }
+        }
+    }
 }

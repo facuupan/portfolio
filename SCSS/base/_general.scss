@@ -32,9 +32,10 @@ body:before {
   top: 0px;
   left: 0;
   background-image: map-get($colores, gradienteFondo);
+  z-index: -1;
 }
 main {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -43,6 +44,9 @@ main {
 }
 h1 {
   font-weight: 700;
+}
+hr{
+  width: auto;
 }
 
 @media only screen and (max-width: 426px) {

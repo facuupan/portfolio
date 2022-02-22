@@ -1,4 +1,8 @@
 header {
+  position: relative;
+  display:flex;
+  align-items: center;
+  padding-top: 1rem;
   #logoContainerNav {
     display: flex;
     align-content: center;
@@ -101,40 +105,3 @@ header {
   }
 }
 
-// @media only screen and (max-width: 426px) {
-//   header {
-//     width: 100%;
-//     margin: auto;
-//     max-height: 70px;
-//     grid-area: header;
-//   }
-//   .headerItems ul {
-//     display: flex;
-//     flex-wrap: nowrap;
-//   }
-//   .headerDiv {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: column;
-//     margin: auto;
-//     padding-top: 1rem;
-//     padding: 0;
-//   }
-//   #logoContainerNav {
-//     display: flex;
-//     align-content: center;
-//     justify-content: space-between;
-//     white-space: nowrap;
-//     align-items: center;
-//     width: fit-content;
-//     .logo {
-//       max-height: 5rem;
-//       max-width: 5rem;
-//       padding-left: 1rem;
-//       align-self: center;
-//     }
-//   }
-//   #FacundoPancaniH2 {
-//     display: none;
-//   }
-// }
