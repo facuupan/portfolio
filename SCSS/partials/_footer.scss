@@ -46,21 +46,17 @@ footer {
     bottom: 0;
     position: absolute;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    padding-top: 2rem;
+    @include flex(flex, row, nowrap, center, baseline);
+    padding-top:1rem;
     li {
       list-style: none;
-      padding: 0rem 0.5rem;
       display: inline;
       font-size: 1rem;
       white-space: nowrap;
+      padding-left: 0.5rem;
     }
     ul {
-      display: flex;
-      flex-direction: column;
+      padding: 0;
     }
     i {
       margin-right: 0.5rem;

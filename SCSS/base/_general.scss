@@ -18,28 +18,16 @@ body {
   min-height: 100vh;
   padding-bottom: 5rem;
   font-size: 1.2rem;
+  background-image: map-get($colores, gradienteFondo);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow-y: scroll;
 }
-body:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  background-image: map-get($colores, gradienteFondo);
-  z-index: -1;
-}
+
 main {
-  // display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   padding-bottom: 5rem;
 }
 h1 {
@@ -53,4 +41,10 @@ hr{
   main {
     padding-top: 2rem;
   }
+}
+.btn {
+  background-color: rgb(59, 122, 238);
+      border-radius: 50px;
+      padding: 9px 25px;
+      cursor: pointer;
 }

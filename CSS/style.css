@@ -18,27 +18,15 @@ body {
   min-height: 100vh;
   padding-bottom: 5rem;
   font-size: 1.2rem;
+  background-image: linear-gradient(109.6deg, #30cfd0 11.2%, #330867 92.5%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   overflow-y: scroll; }
 
-body:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0;
-  background-image: linear-gradient(109.6deg, #30cfd0 11.2%, #330867 92.5%);
-  z-index: -1; }
-
 main {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 3rem;
+  padding-top: 2.5rem;
   padding-bottom: 5rem; }
 
 h1 {
@@ -50,6 +38,12 @@ hr {
 @media only screen and (max-width: 426px) {
   main {
     padding-top: 2rem; } }
+
+.btn {
+  background-color: #3b7aee;
+  border-radius: 50px;
+  padding: 9px 25px;
+  cursor: pointer; }
 
 #sectionContacto {
   background-color: white;
@@ -79,28 +73,6 @@ hr {
     border-radius: 1rem;
     width: 80% !important; } }
 
-@media only screen and (max-width: 425px) {
-  #mainIndex {
-    padding-top: 7.5rem; }
-    #mainIndex #indexMainH1 {
-      text-align: center;
-      font-weight: bold;
-      font-size: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative; }
-    #mainIndex #quienSoy {
-      text-align: center;
-      font-weight: bold;
-      font-size: 2rem;
-      margin-left: auto;
-      margin-right: auto;
-      position: relative;
-      margin-top: 100px;
-      text-decoration: none; }
-      #mainIndex #quienSoy a:hover {
-        color: greenyellow; } }
-
 #mainIndex {
   padding-top: 10rem; }
   #mainIndex .mainItemsDiv {
@@ -108,23 +80,25 @@ hr {
     #mainIndex .mainItemsDiv #indexMainH1 {
       text-align: center;
       font-weight: bold;
-      font-size: 3.5rem;
       margin-left: auto;
       margin-right: auto;
       position: relative; }
     #mainIndex .mainItemsDiv #quienSoy {
       text-align: center;
       font-weight: bold;
-      font-size: 2rem;
       margin-left: auto;
       margin-right: auto;
       position: relative;
-      margin-top: 100px;
+      margin-top: 5rem;
       text-decoration: none; }
       #mainIndex .mainItemsDiv #quienSoy a:hover {
         color: greenyellow; }
       #mainIndex .mainItemsDiv #quienSoy a {
         text-shadow: 3rem; }
+
+@media only screen and (max-width: 992px) {
+  #mainIndex {
+    padding-top: 7.5rem; } }
 
 header {
   position: relative;
@@ -188,7 +162,7 @@ header {
       background-image: linear-gradient(200deg, rgba(48, 207, 208, 0.85) 11.2%, rgba(51, 8, 103, 0.9) 90%);
       box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); } }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   header {
     width: 100%;
     margin: auto;
@@ -205,13 +179,13 @@ header {
       max-width: 5rem;
       padding-left: 1rem;
       align-self: center; }
-  #FacundoPancaniH2 {
+  #facundoPancaniH2 {
     display: none; } }
 
 footer {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: row;
+  justify-content: flex-end;
   align-content: baseline;
   bottom: 0;
   position: absolute;
@@ -233,7 +207,7 @@ footer {
   footer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: row;
+    justify-content: flex-end;
     align-content: baseline;
     position: absolute;
     bottom: 0;
@@ -248,25 +222,24 @@ footer {
     footer i {
       margin-right: 4px; } }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   footer {
     bottom: 0;
     position: absolute;
     width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-content: center;
-    padding-top: 2rem; }
+    align-content: baseline;
+    padding-top: 1rem; }
     footer li {
       list-style: none;
-      padding: 0rem 0.5rem;
       display: inline;
       font-size: 1rem;
-      white-space: nowrap; }
+      white-space: nowrap;
+      padding-left: 0.5rem; }
     footer ul {
-      display: flex;
-      flex-direction: column; }
+      padding: 0; }
     footer i {
       margin-right: 0.5rem; } }
 
@@ -288,7 +261,7 @@ footer {
     .mainGaleria .row .card .card-body p {
       color: black; }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   .mainGaleria .row .card {
     display: flex;
     background-color: aliceblue;
@@ -304,63 +277,57 @@ footer {
       color: black; } }
 
 #mainConocimientos .row {
-  padding-top: 5em; }
+  padding-top: 2.5rem; }
+
+#mainConocimientos h2 {
+  text-align: center;
+  font-size: medium;
+  font-weight: bold; }
+
+#mainConocimientos img {
+  display: inline-block;
+  min-width: 5rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto; }
 
 #mainConocimientos .logosTop {
-  max-width: 6em;
-  margin: 0 1em;
+  max-width: 6rem;
+  margin: auto;
   justify-content: center; }
-  #mainConocimientos .logosTop h2 {
-    text-align: center;
-    font-size: medium;
-    font-weight: bold; }
-  #mainConocimientos .logosTop img {
-    display: inline-block;
-    min-width: 5em;
-    margin-bottom: 1em;
-    margin-left: auto;
-    margin-right: auto; }
 
 #mainConocimientos .logosBot {
-  max-width: 6em;
-  margin: 0 1em;
+  max-width: 6rem;
+  margin: auto;
   justify-content: center; }
-  #mainConocimientos .logosBot h2 {
-    text-align: center;
-    font-size: medium; }
   #mainConocimientos .logosBot img {
-    min-width: 5em;
-    margin-bottom: 1em; }
+    min-width: 4rem; }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 430px) {
   #mainConocimientos #LogosContainer {
     padding: 0; }
   #mainConocimientos .row {
-    padding-top: 2em; }
+    padding-top: 2rem; }
+  #mainConocimientos h2 {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold; }
   #mainConocimientos .logosTop {
-    max-width: 6em;
-    margin: 0 1em;
+    max-width: 6rem;
+    margin: auto;
     justify-content: center; }
-    #mainConocimientos .logosTop h2 {
-      text-align: center;
-      font-size: medium;
-      font-weight: bold; }
     #mainConocimientos .logosTop img {
       display: inline-block;
-      min-width: 2em;
-      margin-bottom: 1em;
+      min-width: 2rem;
+      margin-bottom: 1rem;
       margin-left: auto;
       margin-right: auto; }
   #mainConocimientos .logosBot {
-    max-width: 5em;
-    margin: 0 1em;
+    max-width: 5rem;
+    margin: auto;
     justify-content: center; }
-    #mainConocimientos .logosBot h2 {
-      text-align: center;
-      font-size: medium; }
     #mainConocimientos .logosBot img {
-      min-width: 3em;
-      margin-bottom: 1em; } }
+      min-width: 2rem; } }
 
-#H1Trabajos {
+#mainTrabajos h1 {
   margin-bottom: 2rem; }
